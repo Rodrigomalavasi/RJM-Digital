@@ -1,0 +1,477 @@
+:root {
+    /*cores*/
+    --borda-servicos-hover: #1d4688;
+    --branco: #F2F2F2;
+    --branco-secundario: #FFFFFF;
+    --cinza: #717171;
+    --cinza-hover: #a4a4a4;
+    --cinza-hover-botao: #E9E9E9;
+    --fundo-banner: #123369;
+    --fundo-banner-servicos: #272424;
+    --fundo-rodape: #e2e2e2;
+    --preto: #000000;
+
+    /*fontes*/
+    --fonte-principal: 'Nunito', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*Cabeçalho*/
+
+.cabecalho {
+    background-color: var(--branco);
+    padding: 0.5% 5%;
+}
+
+.cabecalho-menu {
+    display: flex;
+}
+
+.cabecalho-texto {
+    color: var(--preto);
+    margin-right: 0.75%;
+}
+
+.menu-hamburguer {
+    width: 2.25rem;
+}
+
+.menu-hamburguer:hover {
+    cursor: pointer;
+    transform: translateY(-0.1rem);
+    transition: 0.5s ease-in-out;
+}
+
+.menu-hamburguer:not(:hover) {
+    transition: 0.5s ease-in-out;
+}
+
+.menu-lista {
+    display: none;
+}
+
+.lista-item {
+    list-style: none;
+    margin-bottom: 0.25rem;
+}
+
+.lista-item:hover{
+    transform: translateX(0.35rem);
+    transition: 0.5s ease-in-out;
+}
+
+.lista-item:not(:hover) {
+    transition: 0.5s ease-in-out;
+}
+
+.item-link {
+    color: var(--preto);
+    font-size: 1.15rem;
+    text-decoration: none;
+}
+
+/*Estilizição dos títulos*/
+
+.titulo {
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+/*Banner*/
+
+.banner {
+    background: linear-gradient(0deg, var(--branco-secundario) 19%, var(--fundo-banner) 0%);
+}
+
+.banner-conteudo {
+    animation: animacao-banner-contato 2.5s ease forwards;
+    opacity: 0;
+    padding: 3.5rem;
+}
+
+.banner-texto {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.banner-imagem-div {
+    align-items: center;
+    text-align: center;
+}
+
+.banner-imagem {
+    animation: animacao-banner-imagem 1s ease-in-out forwards 2.35s;
+}
+
+/*Banner - descrição dos serviços prestados*/
+
+.banner-servicos-divs {
+    background-color: var(--fundo-banner-servicos);
+    margin: 0rem 10% 3.5rem 10%;
+    opacity: 0;
+    padding: 2.5rem;
+    width: 80%;
+}
+
+.servicos-animacao {
+    animation: animacao-banner-servicos 1.5s ease-in-out forwards;
+}
+
+.banner-servico-div {
+    margin-top: 1rem;
+    width: 31.1%;
+}
+
+.banner-servico-div:nth-child(-n + 2) {
+    margin-right: 1.1%;
+}
+
+.banner-servico-div:hover {
+    transform: translateY(-0.5rem);
+    transition: 0.5s ease-in-out;
+}
+
+.banner-servico-div:not(:hover) {
+    transition: 0.75s ease-in-out;
+}
+
+.banner-servicos-descricao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicos-titulo {
+    border-bottom: solid 2px var(--branco);
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/*Contato*/
+
+.contato {
+    margin: 5% 10%;
+    opacity: 0;
+}
+
+.contato-animacao {
+    animation: animacao-banner-contato 2s ease-in-out forwards;
+}
+
+.titulo-contato {
+    color: var(--preto);
+}
+
+.subtitulo-contato {
+    color: var(--preto);
+    margin-bottom: 1rem;
+}
+
+.contatos-infos {
+    display: flex;
+    opacity: 0;
+}
+
+.contatos-infos-animacao {
+    animation: animacao-banner-contato 2.5s ease-in-out forwards 0.5s;
+}
+
+/*Contato - cadastro*/
+
+.contato-cadastro-pai {
+    border-right: 1px solid var(--cinza-hover);
+    margin-top: 2rem;
+    width: 60%;
+}
+
+.contato-cadastro-input {
+    border: 0px;
+    border-bottom: 1px solid var(--cinza-hover);
+    box-sizing: border-box;
+    color: var(--cinza);
+    margin: 2rem 2rem 2rem 0rem;
+    outline: 0px;
+    padding-bottom: 0.5rem;
+    width: 15rem;
+}
+
+.contato-cadastro-input:focus {
+    outline: none;
+}
+
+.contato-botao {
+    background-color: var(--branco-secundario);
+    border: 1px solid var(--cinza-hover);
+    color: var(--cinza);
+    padding: 0.5rem;
+    width: 25%;
+}
+
+.contato-botao:hover {
+    background-color: var(--cinza-hover-botao);
+    transition: 0.5s ease-in-out;
+}
+
+.contato-botao:not(:hover) {
+    transition: 0.5s ease-in-out;
+}
+
+/*Contato - informações para contato*/
+
+.contato-informacoes {
+    margin: 2rem 2rem 0rem 2rem;
+    width: 40%;
+}
+
+.contato-informacoes-div {
+    margin-bottom: 1.5rem;
+}
+
+.contato-informacoes-lista-rs{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60%;
+}
+
+.contato-informacao-item {
+    color: var(--cinza);
+    list-style: none;
+    margin-bottom: 0.75rem;
+}
+
+/*Contato - redes sociais*/
+
+.rede-social-img {
+    width: 1.25rem;
+}
+
+.rede-social-img:hover {
+    transform: translateY(-0.225rem);
+    transition: 0.5s ease-in-out;
+}
+
+.rede-social-img:not(:hover) {
+    transition: 0.5s ease-in-out;
+}
+
+/*Rodapé*/
+
+.rodape {
+    background-color: var(--fundo-rodape);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.rodape-texto {
+    color: var(--preto);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+/*Animação da classe "banner-conteudo" e */
+
+@keyframes animacao-banner-contato {
+    from{
+        transform: translateX(-62.5rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Animação sa classe "banner-imagem"*/
+
+@keyframes animacao-banner-imagem {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.015);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Animação da classe "servicos-animacao"*/
+
+@keyframes animacao-banner-servicos {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1000px) {
+    /*Banner*/
+    .banner-texto {
+        width: 75%;
+    }
+
+    /*Contato*/
+    .contato-informacoes-lista-rs{
+        margin-right: 45%;
+    }
+}
+
+@media (max-width: 740px) {
+    /*Banner - serviços*/
+
+    .banner-servico-div:hover {
+        transform: none;
+    }
+
+    .banner-servicos-divs {
+        margin: 0rem 7.5% 3.5rem 7.5%;
+        width: 85%;
+    }
+    
+    .banner-servicos-descricao {
+        display: block;
+    }
+
+    .banner-servico-div {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .servicos-titulo {
+        border-bottom: none;
+    }
+
+    .servicos-titulo:active {
+        color: var(--cinza-hover);
+        transition: 0.2s;
+    }
+
+    /*classes usadas para no arquivo JavaScript ./servicos.js*/
+
+    .servicos-descricao {
+        display: none;
+    }
+
+    .servicos-descricao.visivel {
+        display: block;
+    }
+
+    /*Contato*/
+
+    .contato {
+        margin: 5% 7.5%;
+    }
+
+    .contato-cadastro-input {
+        margin: 2rem 1rem 2rem 0rem;
+    }
+
+    .contato-botao {
+        width: 40%;
+    }
+
+    .contato-informacoes {
+        margin: 2rem 0rem 0rem 1rem;
+        width: 40%;
+    }
+    
+}
+
+@media (max-width: 560px) {
+    /*Estilização títulos*/
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .banner-imagem {
+        width: 50%;
+    }
+
+    /*Contato*/ 
+
+    .subtitulo-contato {
+        font-size: 1.35rem;
+    }
+}
+
+@media (max-width: 450px) {
+    /*Banner margin: 0rem 7.5% 3.5rem 7.5%;*/
+
+    .banner-conteudo {
+        animation: animacao-banner-contato-responsivo 2.5s ease forwards;
+    }
+
+    .banner-conteudo {
+        padding: 3.5rem 5% 3.5rem 5%;
+    }
+
+    .banner-imagem {
+        animation: animacao-banner-imagem-responsivo 1s ease-in-out forwards 2.35s;
+    }
+    
+    /*Contato*/
+
+    .contatos-infos {
+        display: block;
+    }
+
+    .contato-animacao {
+        animation: animacao-banner-contato-responsivo 2s ease-in-out forwards;
+    }
+
+    .contato-cadastro-pai {
+        border-right: none;
+        width: 100%;
+    }
+
+    .contatos-infos-animacao {
+        animation: animacao-banner-contato-responsivo 2.5s ease-in-out forwards 0.5s;
+    }
+
+    .contato-cadastro-input {
+        width: 85%;
+    }
+
+    .contato-informacoes {
+        width: 100%;
+    }
+
+    .contato-informacoes-lista-rs{
+        margin: 0rem 4rem 0rem 2rem;
+    }
+}
+
+@keyframes animacao-banner-contato-responsivo {
+    from{
+        transform: translateX(-22.5rem);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Animação sa classe "banner-imagem"*/
+
+@keyframes animacao-banner-imagem-responsivo {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

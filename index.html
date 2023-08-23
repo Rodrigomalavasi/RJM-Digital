@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJM Digital</title>
+    <link rel="icon" href="./laptop-icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho-menu-div">
+            <div class="cabecalho-menu">
+                <a class="cabecalho-texto"><h2 class="cabecalho-texto">RJM</h2></a>
+                <img class="menu-hamburguer" id="menu-hamburguer" src="./menu.svg" alt="Menu hambúrguer.">
+            </div>
+
+            <div class="menu-lista-div">
+                <ul class="menu-lista" id="menu-lista">
+                    <li class="lista-item"><a class="item-link" href="#home">Home</a></li>
+                    <li class="lista-item"><a class="item-link" href="#servicos">Serviços</a></li>
+                    <li class="lista-item"><a class="item-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="principal">
+        <section class="banner" id="home">
+            <div class="banner-conteudo">
+                <div class="banner-texto">
+                    <h1 class="titulo">RJM Digital, muito mais do que somente soluções web!</h1>
+                    <p class="banner-descricao">Somos uma empresa que trabalha com soluções tecnológicas que agregam valor, promove seu desenvolvimento, aumenta a produtividade e performance do seu negócio.</p>
+                </div>
+
+                <div class="banner-imagem-div">
+                    <img class="banner-imagem" src="./banner-computador.png" alt="Monitor azul exibindo exemplificação de gráficos na tela, com mouse também na cor azul ao lado e um teclado branco.">
+                </div>
+            </div>
+
+            <div class="banner-servicos-divs" id="servicos">
+                <h1 class="titulo banner-servicos-titulo">Nossos serviços</h1>
+
+                <div class="banner-servicos-descricao">
+                    <div class="banner-servico-div">
+                        <h2 class="servicos-titulo servico-titulo" id="servico" data-id="e-commerce">Criação de E-commerce</h2>
+                        <p class="servicos-descricao servico-responsivo-ecommerce" id="servico-descricao" data-id="e-commerce">Para você que tem loja e quer vender 24 horas por dia, ter escalabilidade no seu negócio, alto controle de estoque e baixo custo, o e-commerce é perfeito para você. E nós da RJM Digital desenvolvemos um E-commerce perfeito para a sua empresa, com um design incrível, bom sistema e interface simples e completa.</p>
+                    </div>
+
+                    <div class="banner-servico-div">
+                        <h2 class="servicos-titulo servico-titulo" id="servico" data-id="web-app">Desenvolvimento Web e de Aplicativos</h2>
+                        <p class="servicos-descricao servico-responsivo-web" id="servico-descricao" data-id="web-app">Nós trabalhamos com desenvolvimento web no geral. Criamos um sites institucionais, blogs, apps e landing pages. Desenvolvemos Android, IOS e Desktop.</p>
+                    </div>
+
+                    <div class="banner-servico-div">
+                        <h2 class="servicos-titulo servico-titulo" id="servico" data-id="bi">Soluções em Business Intelligence</h2>
+                        <p class="servicos-descricao servico-responsivo-bi" id="servico-descricao" data-id="bi">Nós desenvolvemos dashboards Power BI para o seu negócio organizando, analisando e monitorando inúmeras informações sobre  sua empresa, facilitando e aprimorando diversos os precessos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="contato">
+                <h1 class="titulo titulo-contato">Entre em contato com a gente!</h1>
+
+                <div class="contatos-infos">
+                    <div class="contato-cadastro-pai">
+                        <h2 class="subtitulo-contato">Deseja falar com a gente?</h2>
+                        <div class="contato-cadastro-div">
+                            <input class="contato-cadastro-input" type="text" placeholder="NOME">
+                            <input class="contato-cadastro-input" type="email" placeholder="E-MAIL">
+                            <button class="contato-botao">ENVIAR</button>
+                        </div>
+                    </div>
+
+                    <div class="contato-informacoes">
+                        <h2 class="subtitulo-contato">Estas são as informações para contato: </h2>
+                        <div class="contato-informacoes-div">
+                            <ul class="contato-informacoes-lista">
+                                <li class="contato-informacao-item">E-mail: rjmdigital@gmail.com</li>
+                                <li class="contato-informacao-item">Tel: 27 99655-7009</li>
+                                <li class="contato-informacao-item">Instagram: @rjmdigital</li>
+                            </ul>
+                        </div>
+
+                        <h2 class="subtitulo-contato">Ah, e nossas redes sociais estão aqui: </h2>
+                        <div class="contato-informacoes-rs">
+                            <ul class="contato-informacoes-lista-rs">
+                                <li class="contato-informacao-item"><a href="#" class="rede-social-link"><img class="rede-social-img" src="./instagram.svg" alt="Ícon e da rede social Instagram."></a></li>
+                                <li class="contato-informacao-item"><a href="#" class="rede-social-link"><img class="rede-social-img" src="./linkedin.svg" alt="Ícon e da rede social LinkedIn."></a></li>
+                                <li class="contato-informacao-item"><a href="#" class="rede-social-link"><img class="rede-social-img" src="./whatsapp.svg" alt="Ícon e da rede social WhatsApp. "></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <p class="rodape-texto">© RJM Digital | Todos os direitos reservados</p>
+        </div>        
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+    <script src="./menu.js"></script>
+    <script src="./servicos.js"></script>
+</body>
+</html>
